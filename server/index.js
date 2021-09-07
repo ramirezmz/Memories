@@ -14,10 +14,10 @@ app.use(bodyParser.urlencoded({ limit: '30mb', extended: true }))
 app.use(cors())
 
 app.use('/posts', postRoutes)
-const port = process.env.PORT
-const password = process.env.PASSW
+const port = "5000"
+const password = "0vnGgaxUE8bMw95J"
 
-const CONNECTION_URL = `mongodb+srv://ramirezmz:${password}@cluster0.74njc.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`
+const CONNECTION_URL = `mongodb+srv://ramirezmz:${password}@cluster0.z3io7.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`
 
 
 mongoose.connect(CONNECTION_URL, { useNewUrlParser: true, useUnifiedTopology: true })
